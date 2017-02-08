@@ -1,8 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 265541133 -- Put Here Your Bot ID
---ایدی رباتتونو اینجا بزارید
+our_id = 274807882 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -82,38 +81,26 @@ function create_config( )
     "groupmanager",
     "msg-checks",
     "plugins",
-    "tools"
+    "tools",
+			"kickme",
+			"nerkh",
+			"report",
+			"share"
  },
-    sudo_users = {157059515},
+    sudo_users = {274807882},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Beyond Reborn v1
-An advanced administration bot based on https://valtman.name/telegram-cli
+    info_text = [[ `Mega Maximus v1.7`
+`An advanced administration bot based on BD`
+》`Developer :`
+》@pedaret ➣ Founder & Developer《
 
-》https://github.com/BeyondTeam/BDReborn 
+》`Sudoers` :
+@im_Einestein
 
-》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@Makan ➣ Developer《
-》@Rixel ➣ Developer 《
-》@Exacute ➣ Developer《
-》@CiveY ➣ Developer
-》@ArmanDev ➣ Manager《
-》@MrPars ➣ Manager《
-
-》Special thanks to :
-》@Vysheng
-》@MrHalix
-》@K_a_I_i_I_i_n_u_x
-》@Nero_Dev
-》And Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://BeyondTeam.ir
+》`Our channel :`
+》@Teshne《
 ]],
   }
   serialize_to_file(config, './data/config.lua')
