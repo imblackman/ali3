@@ -87,7 +87,7 @@ function create_config( )
 			"report",
 			"share"
  },
-    sudo_users = {274807882},
+    sudo_users = {246153792,222002038,199042636,263518546,0,tonumber(our_id)},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
